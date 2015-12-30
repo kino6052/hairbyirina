@@ -1,0 +1,55 @@
+/* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 0;
+    font-family: "Playfair Display";
+    background-image: url("http://www.pravoslavie.ru/pics/bg.jpg");
+    background-size: repeat;
+}
+
+/* Thanks to panchroma */
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+
+video {
+    width: 100%;
+}
+
+li a {
+   color: white;
+   font-style: italic;
+}
+
+.theme-showcase {
+    background-color: black;
+    border: 1px solid #AAA;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+  border-radius: 6px!important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Playfair Display";
+    color: white;
+}
+
+row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

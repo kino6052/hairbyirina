@@ -1,5 +1,6 @@
 body {
     font-family: "Playfair Display";
+	overflow-x: hidden;
 }
 
 a, a:visited, a:hover {
@@ -37,6 +38,11 @@ a, a:visited, a:hover {
     z-index: 0;
 }
 
+#video-container img {
+	margin: 0 !important;
+	border: none !important;
+}
+
 
 
 @media screen and (max-width: 767px){
@@ -69,7 +75,7 @@ img {
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 50%;
+    left: 80%;
     
     margin-left: -100px;
     margin-top: -100px;
@@ -123,10 +129,25 @@ video {
 
 .black p {
     font-family: "Roboto Thin";
-    line-height: 15px;
+    line-height: 22px;
     margin: 10px 0 10px 0;
+<<<<<<< HEAD
     
+=======
+    font-size: 18px;
+>>>>>>> e13320b6d586456c2cadb5c9e10d5297710f68c2
 }
+
+#service-type {
+	width: 30%;
+}
+
+#service-type p {
+	font-weight: bold;
+	font-style: italic;
+	font-family: "Playfair Display";
+}
+
 .section {
     margin-top: -10px;
     background: url("http://previews.123rf.com/images/gromaler/gromaler0903/gromaler090300011/4487922-Vector-Seamless-damask-pattern-Vintage-wallpaper-black-and-white-Stock-Vector.jpg");
@@ -151,6 +172,12 @@ footer {
     color: white;
     font-family: "Roboto Thin";
     line-height: 15px;
+<<<<<<< HEAD
+=======
+    font-size: 14px;
+	text-align: center;
+	padding: auto;
+>>>>>>> e13320b6d586456c2cadb5c9e10d5297710f68c2
 }
 
 #footer-left, #footer-right {
