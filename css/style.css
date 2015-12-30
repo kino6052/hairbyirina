@@ -125,7 +125,7 @@ video {
     font-family: "Roboto Thin";
     line-height: 15px;
     margin: 10px 0 10px 0;
-    font-size: 14px;
+    
 }
 .section {
     margin-top: -10px;
@@ -151,7 +151,6 @@ footer {
     color: white;
     font-family: "Roboto Thin";
     line-height: 15px;
-    font-size: 14px;
 }
 
 #footer-left, #footer-right {
