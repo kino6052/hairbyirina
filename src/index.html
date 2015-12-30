@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,14 +16,55 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" type="text/css" />
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/image-gallery/bootstrap-image-gallery.min.css">
+        <link rel="stylesheet" href="css/footer/footer-distributed-with-address-and-phones.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+    
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                Previous
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                Next
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
         <div class="container-fluid" style="margin: 0; padding: 0;">
           <div class="row header" style="">
               <h1>Hair by Irina</h1>
@@ -30,11 +72,13 @@
                 Stylist
               </div>
           </div><!--row-->
-          <div class="row">
-              <div class="col-sm-3 gallery" id="img01" style="background-image: url('imgs/img01.jpg');">
-              </div>
-              <div class="col-sm-3 gallery" id="img02" style="background-image: url('imgs/img02.jpg')">
-              </div>
+          <div class="row" id="links">
+              <a href="imgs/img01.jpg" title="Image 01" data-gallery>
+                <div class="col-sm-3 gallery" id="img01" style="background-image: url('imgs/img01.jpg');"></div>
+              </a>
+              <a href="imgs/img02.jpg" title="Image 02" data-gallery>
+                <div class="col-sm-3 gallery" id="img02" style="background-image: url('imgs/img02.jpg')"></div>
+              </a>
               <div class="col-sm-3 gallery" id="img03" style="background-image: url('imgs/img01.jpg')">
               </div>
               <div class="col-sm-3 gallery" id="img04" style="background-image: url('imgs/img02.jpg')">
@@ -141,22 +185,61 @@
               </div><!--row-->
           </section>
         </div><!--container-->
-        <footer>
-            <h1>I am Looking Forward to Hearing from You!</h1>
-            <div class="row">
-                <div class="col-sm-3 social"><p><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Facebook</p></div>
-                <div class="col-sm-3 social"><p><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Twitter</p></div>
-                <div class="col-sm-3 social"><p><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Instagram</p></div>
-                <div class="col-sm-3 social"><p><span class="glyphicon glyphicon-search" aria-hidden="true"></span> LinkedIn</p></div>
-            </div>
-            <p>All Rights Reserved (c)2015</p>
-        </footer>
+        
+        <!--Footer Code is Taken from http://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/-->
+        <footer class="footer-distributed">
+    			<div class="footer-left">
+    				<h3>Hair<span> by</span> Irina</h3>
+    				<p class="footer-links">
+    					<a href="#">Home</a>
+    					·
+    					<a href="#">Blog</a>
+    					·
+    					<a href="#">Pricing</a>
+    					·
+    					<a href="#">About</a>
+    					·
+    					<a href="#">Faq</a>
+    					·
+    					<a href="#">Contact</a>
+    				</p>
+    				<p class="footer-company-name">Company Name &copy; 2015</p>
+    			</div>
+    			<div class="footer-center">
+    				<div>
+    					<i class="fa fa-map-marker"></i>
+    					<p><span>21 Revolution Street</span> Paris, France</p>
+    				</div>
+    				<div>
+    					<i class="fa fa-phone"></i>
+    					<p>+1 555 123456</p>
+    				</div>
+    				<div>
+    					<i class="fa fa-envelope"></i>
+    					<p><a href="mailto:support@company.com">support@company.com</a></p>
+    				</div>
+    			</div>
+    			<div class="footer-right">
+    				<p class="footer-company-about">
+    					<span>About the company</span>
+    					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    				</p>
+    				<div class="footer-icons">
+    					<a href="#"><i class="fa fa-facebook"></i></a>
+    					<a href="#"><i class="fa fa-twitter"></i></a>
+    					<a href="#"><i class="fa fa-linkedin"></i></a>
+    					<a href="#"><i class="fa fa-github"></i></a>
+    				</div>
+    			</div>
+    		</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="js/image-gallery/bootstrap-image-gallery.min.js"></script>
         <script>
           function getOffsetTop( elem )
           {

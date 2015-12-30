@@ -71,24 +71,3 @@ section .row {
   background-color: #8BDAFF !important;
   color: white;
 }
-footer {
-  background-color: #8BDAFF;
-  font-size: 1.4em;
-  padding: 40px 0 40px 0;
-}
-footer h1 {
-  color: white;
-  font-size: 1.6em;
-  line-height: 1.8em;
-  text-align: center;
-}
-footer h2 {
-  color: white;
-  font-family: "Roboto";
-  text-align: center;
-}
-footer p {
-  color: white;
-  font-size: 0.8em;
-  text-align: center;
-}
