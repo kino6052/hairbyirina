@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
 
 // COLORS
 @headerTextColor: white;
+@headerSpanColor: #8BDAFF;
 @separatorColor: #8BDAFF;
 @textColor: white;
 
@@ -14,6 +15,12 @@
 // GLOBAL
 
 // HEADER
+p, td {
+    font-size: 1.4em;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
 .header {
     background: #FFFFFF url('../imgs/header.jpg') no-repeat center center; 
     background-size: cover; 
@@ -35,13 +42,19 @@
 }
 
 .h1 {
-    font-family: "Playfair Display";
+    font-family: "Cookie";
     font-size: 4em;
     font-style: italic;  
 }
 
+
+
 h1 {
     .h1;
+}
+
+h1 span {
+   color: @headerSpanColor; 
 }
 
 .row {
@@ -60,7 +73,7 @@ h1 {
     position: relative;
     height: @headerHeight;
     background: no-repeat center center;
-    background-size: cover;
+    background-size: auto 100%;
     padding: 0;
 }
 
@@ -81,7 +94,7 @@ h1 {
 // CONTENT
 section {
     padding: 0 0 200px 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 section .row {
