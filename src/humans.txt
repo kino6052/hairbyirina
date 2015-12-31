@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Kirill Novik -- Developer/Designer -- @dorkimim
 
 # THANKS
 
-    <name>
+    Nikita Novik and all of the Internet! 
 
 # TECHNOLOGY COLOPHON
 

@@ -14,7 +14,7 @@ var SectionAnimator = function(){
 var states = {
   "first-section": true,
   "second-section": true,
-  "third-section": true,
+  "third-section": true
 };
 this.animate = function(idName){
   if (states[idName]){
