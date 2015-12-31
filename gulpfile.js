@@ -3,6 +3,13 @@ var less = require('gulp-less');
 var path = require('path');
 var LessPluginCleanCSS = require('less-plugin-clean-css'),
     cleancss = new LessPluginCleanCSS({ advanced: true });
+var minifyHTML = require('gulp-minify-html');
+ 
+gulp.task('minify-html', function() {
+  return gulp.src('./src/*.html')
+    .pipe(minifyHTML({ empty: true }))
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('less', function() {
   console.log("Processing Less Files...");
