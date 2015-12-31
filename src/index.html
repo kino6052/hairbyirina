@@ -5,23 +5,40 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Hair by Irina</title>
-        <meta name="description" content="">
+        <meta name="description" content="This is a Personal Website for Irina Jones - a Professional Hair Stylist">
+        <meta name="keywords" content="footer, address, phone, icons">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-control" content="public">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <script>
+          function loadjscssfile(filename, filetype){
+              if (filetype=="js"){ //if filename is a external JavaScript file
+                  var fileref=document.createElement('script');
+                  fileref.setAttribute("type","text/javascript");
+                  fileref.setAttribute("src", filename);
+              }
+              else if (filetype=="css"){ //if filename is an external CSS file
+                  var fileref=document.createElement("link");
+                  fileref.setAttribute("rel", "stylesheet");
+                  fileref.setAttribute("type", "text/css");
+                  fileref.setAttribute("href", filename);
+              }
+              if (typeof fileref!="undefined")
+                  document.getElementsByTagName("head")[0].appendChild(fileref);
+          }
+          loadjscssfile('css/normalize.css', 'css');
+          loadjscssfile('css/main.css', 'css');
+          loadjscssfile('bootstrap/css/bootstrap-theme.min.css', 'css');
+          loadjscssfile('bootstrap/css/bootstrap.min.css', 'css');
+          loadjscssfile('https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css', 'css');
+          loadjscssfile('css/image-gallery/bootstrap-image-gallery.min.css', 'css');
+          loadjscssfile('css/footer/footer-distributed-with-address-and-phones.css', 'css');
+          loadjscssfile('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', 'css');
+          loadjscssfile('https://fonts.googleapis.com/css?family=Cookie', 'css');
+          loadjscssfile('js/vendor/modernizr-2.8.3.min.js', 'js');
+        </script>
         <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" type="text/css" />
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-        <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-        <link rel="stylesheet" href="css/image-gallery/bootstrap-image-gallery.min.css">
-        <link rel="stylesheet" href="css/footer/footer-distributed-with-address-and-phones.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
     <body>
@@ -73,24 +90,30 @@
               </div>
           </div><!--row-->
           <div class="row" id="links">
-              <a href="imgs/img01.jpg" title="Image 01" data-gallery>
-                <div class="col-sm-3 gallery" id="img01" style="background-image: url('imgs/img01.jpg');"></div>
+              <a href="imgs/img01-compressor.jpg" title="Image 01" data-gallery>
+                <div class="col-sm-3 gallery" id="img01" style="background-image: url('imgs/img01-compressor.jpg');"></div>
               </a>
-              <a href="imgs/img02.jpg" title="Image 02" data-gallery>
-                <div class="col-sm-3 gallery" id="img02" style="background-image: url('imgs/img02.jpg')"></div>
+              <a href="imgs/img02-compressor.jpg" title="Image 02" data-gallery>
+                <div class="col-sm-3 gallery" id="img02" style="background-image: url('imgs/img02-compressor.jpg')"></div>
               </a>
-              <div class="col-sm-3 gallery" id="img03" style="background-image: url('imgs/img01.jpg')">
-              </div>
-              <div class="col-sm-3 gallery" id="img04" style="background-image: url('imgs/img02.jpg')">
-              </div>
-              <div class="col-sm-3 gallery" id="img05" style="background-image: url('imgs/img02.jpg')">
-              </div>
-              <div class="col-sm-3 gallery" id="img06" style="background-image: url('imgs/img01.jpg')">
-              </div>
-              <div class="col-sm-3 gallery" id="img07" style="background-image: url('imgs/img02.jpg')">
-              </div>
-              <div class="col-sm-3 gallery" id="img08" style="background-image: url('imgs/img01.jpg')">\
-              </div>
+              <a href="imgs/img01-compressor.jpg" title="Image 01" data-gallery>
+                <div class="col-sm-3 gallery" id="img03" style="background-image: url('imgs/img01-compressor.jpg');"></div>
+              </a>
+              <a href="imgs/img02-compressor.jpg" title="Image 02" data-gallery>
+                <div class="col-sm-3 gallery" id="img04" style="background-image: url('imgs/img02-compressor.jpg')"></div>
+              </a>
+              <a href="imgs/img02-compressor.jpg" title="Image 02" data-gallery>
+                <div class="col-sm-3 gallery" id="img05" style="background-image: url('imgs/img02-compressor.jpg')"></div>
+              </a>
+              <a href="imgs/img01-compressor.jpg" title="Image 01" data-gallery>
+                <div class="col-sm-3 gallery" id="img06" style="background-image: url('imgs/img01-compressor.jpg');"></div>
+              </a>
+              <a href="imgs/img02-compressor.jpg" title="Image 02" data-gallery>
+                <div class="col-sm-3 gallery" id="img07" style="background-image: url('imgs/img02-compressor.jpg')"></div>
+              </a>
+              <a href="imgs/img01-compressor.jpg" title="Image 01" data-gallery>
+                <div class="col-sm-3 gallery" id="img08" style="background-image: url('imgs/img01-compressor.jpg');"></div>
+              </a>
           </div><!--row-->
           <div class="row separator">
               <p>It is all about YOU and your hair!</p>

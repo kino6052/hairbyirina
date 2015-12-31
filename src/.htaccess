@@ -812,9 +812,10 @@ ServerSignature Off
 #
 # https://developers.google.com/speed/pagespeed/module/configuration#notransform
 
-# <IfModule mod_headers.c>
-#     Header merge Cache-Control "no-transform"
-# </IfModule>
+ <IfModule mod_headers.c>
+     #Header merge Cache-Control "no-transform"
+     Header merge Cache-Control "max-age: 3000, public"
+ </IfModule>
 
 # ----------------------------------------------------------------------
 # | ETags                                                              |
